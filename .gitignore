@@ -1,0 +1,75 @@
+# ==============================
+# 🧠 Data Citation Intent Classification
+# Git Ignore Setup (Final Version)
+# ==============================
+
+# ------------------------------------------
+# 🧩 Data Files (raw + processed)
+# ------------------------------------------
+data/raw/*
+data/processed/*
+!data/raw/sample_submission.csv        # keep sample file for reference
+!data/processed/train_labeled.csv      # optional: keep labeled CSV if small
+
+# ------------------------------------------
+# 🧠 Model Weights and Artifacts
+# ------------------------------------------
+models/**/*.pt
+models/**/*.bin
+models/**/*.pkl
+models/**/*.safetensors
+models/inference_results/*.csv
+models/bert_baseline_model/*
+!models/bert_baseline_model/config.json
+!models/bert_baseline_model/tokenizer_config.json
+
+# ------------------------------------------
+# 📸 Screenshots (keep visible on GitHub)
+# ------------------------------------------
+!Screenshots/
+!Screenshots/*.png
+
+# ------------------------------------------
+# 🧪 Virtual Environments
+# ------------------------------------------
+env/
+venv/
+.venv/
+bert_env/
+citation_env/
+citation_clean/
+__pycache__/
+*.pyc
+
+# ------------------------------------------
+# 📒 Jupyter Notebook Checkpoints
+# ------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------
+# 💻 Temporary and System Files
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# ------------------------------------------
+# ⚙️ Cache and Package Files
+# ------------------------------------------
+*.egg-info/
+*.dist-info/
+__pycache__/
+
+# ------------------------------------------
+# 📦 IDE and Editor Files
+# ------------------------------------------
+.vscode/
+.idea/
+
+# ------------------------------------------
+# 🚫 Miscellaneous
+# ------------------------------------------
+*.zip
+*.tar
+*.gz
